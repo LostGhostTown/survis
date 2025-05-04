@@ -1,14 +1,169 @@
-@article{Beck2016Visual,
-  abstract = {Bibiographic data such as collections of scientific articles and citation networks have been studied extensively in information visualization and visual analytics research. Powerful systems have been built to support various types of bibliographic analysis, but they require some training and cannot be used to disseminate the insights gained. In contrast, we focused on developing a more accessible visual analytics system, called SurVis, that is ready to disseminate a carefully surveyed literature collection. The authors of a survey may use our Web-based system to structure and analyze their literature database. Later, readers of the survey can obtain an overview, quickly retrieve specific publications, and reproduce or extend the original bibliographic analysis. Our system employs a set of selectors that enable users to filter and browse the literature collection as well as to control interactive visualizations. The versatile selector concept includes selectors for textual search, filtering by keywords and meta-information, selection and clustering of similar publications, and following citation links. Agreement to the selector is represented by word-sized sparkline visualizations seamlessly integrated into the user interface. Based on an analysis of the analytical reasoning process, we derived requirements for the system. We developed the system in a formative way involving other researchers writing literature surveys. A questionnaire study with 14 visual analytics experts confirms that SurVis meets the initially formulated requirements.},
-  author = {Beck, Fabian and Koch, Sebastian and Weiskopf, Daniel},
-  doi = {10.1109/TVCG.2015.2467757},
-  journal = {IEEE Transactions on Visualization and Computer Graphics},
-  keywords = {type:system, visual_analytics, sparklines, information_retrieval, clustering, literature_browser},
-  number = {01},
-  publisher = {IEEE},
-  volume = {22},
-  series = {TVCG},
-  title = {Visual Analysis and Dissemination of Scientific Literature Collections with {SurVis}},
-  url = {http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/vast15-survis.pdf},
-  year = {2016}
+@article{LatentShift,
+    abstract = {We propose Latent-Shift -- an efficient text-to-video generation method based on a pretrained text-to-image generation model that consists of an autoencoder and a U-Net diffusion model. Learning a video diffusion model in the latent space is much more efficient than in the pixel space. The latter is often limited to first generating a low-resolution video followed by a sequence of frame interpolation and super-resolution models, which makes the entire pipeline very complex and computationally expensive. To extend a U-Net from image generation to video generation, prior work proposes to add additional modules like 1D temporal convolution and/or temporal attention layers. In contrast, we propose a parameter-free temporal shift module that can leverage the spatial U-Net as is for video generation. We achieve this by shifting two portions of the feature map channels forward and backward along the temporal dimension. The shifted features of the current frame thus receive the features from the previous and the subsequent frames, enabling motion learning without additional parameters. We show that Latent-Shift achieves comparable or better results while being significantly more efficient. Moreover, Latent-Shift can generate images despite being finetuned for T2V generation},
+    author = {Jie An, Songyang Zhang, Harry Yang, Sonal Gupta, Jia - Bin Huang, Jiebo Luo, Xi Yin},
+    doi = {10.48550/arXiv.2304.08477},
+    journal = {arXiv preprint arXiv:2304.08477},
+    keywords = {text - to - video generation, latent diffusion model, temporal shift module},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {Latent - Shift: Latent Diffusion with Temporal Shift for Efficient Text - to - Video Generation},
+    url = {https://arxiv.org/abs/2304.08477},
+    year = {2023}
+}
+
+@article{FollowYourPose,
+    abstract ={Despite recent advances in image-to-video generation, better controllability and local animation are less explored. Most existing image-to-video methods are not locally aware and tend to move the entire scene. However, human artists may need to control the movement of different objects or regions. Additionally, current I2V methods require users not only to describe the target motion but also to provide redundant detailed descriptions of frame contents. These two issues hinder the practical utilization of current I2V tools. In this paper, we propose a practical framework, named Follow-Your-Click, to achieve image animation with a simple user click (for specifying what to move) and a short motion prompt (for specifying how to move). Technically, we propose the first-frame masking strategy, which significantly improves the video generation quality, and a motion-augmented module equipped with a short motion prompt dataset to improve the short prompt following abilities of our model. To further control the motion speed, we propose flow-based motion magnitude control to control the speed of target movement more precisely. Our framework has simpler yet precise user control and better generation performance than previous methods. Extensive experiments compared with 7 baselines, including both commercial tools and research methods on 8 metrics, suggest the superiority of our approach},
+    author = {Yue Ma, Yingqing He, Hongfa Wang, Andong Wang, Chenyang Qi, Chengfei Cai, Xiu Li, Zhifeng Li, Heung-Yeung Shum, Wei Liu, Qifeng Chen},
+    doi = {10.48550/arXiv.2403.08268},
+    journal = {arXiv preprint arXiv:2403.08268},
+    keywords = {pose - guided, text - to - video generation, two - stage training},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {Follow Your Pose: Pose - guided Text - to - Video Generation using Pose - free Videos},
+    url = {https://arxiv.org/abs/2403.08268},
+    year = {2024}
+}
+
+@article{Direct2V,
+    abstract = {In the paradigm of AI-generated content (AIGC), there has been increasing attention to transferring knowledge from pre-trained text-to-image (T2I) models to text-to-video (T2V) generation. Despite their effectiveness, these frameworks face challenges in maintaining consistent narratives and handling shifts in scene composition or object placement from a single abstract user prompt. Exploring the ability of large language models (LLMs) to generate time-dependent, frame-by-frame prompts, this paper introduces a new framework, dubbed DirecT2V. DirecT2V leverages instruction-tuned LLMs as directors, enabling the inclusion of time-varying content and facilitating consistent video generation. To maintain temporal consistency and prevent mapping the value to a different object, we equip a diffusion model with a novel value mapping method and dual-softmax filtering, which do not require any additional training. The experimental results validate the effectiveness of our framework in producing visually coherent and storyful videos from abstract user prompts, successfully addressing the challenges of zero-shot video generation},
+    author = {Susung Hong, Junyoung Seo, Heeseong Shin, Sung Hwan Hong, Seung Ryong Kim},
+    doi = {10.48550/arXiv.2305.14330},
+    journal = {arXiv preprint arXiv:2305.14330},
+    keywords = {large language models, zero - shot learning, text - to - video generation},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {Direct2V: Large Language Models are Frame - level Directors for Zero - shot Text - to - Video Generation},
+    url = {https://arxiv.org/abs/2305.14330},
+    year = {2023}
+}
+
+@article{ControlAVideo,
+    abstract = {Recent advancements in diffusion models have unlocked unprecedented abilities in visual creation. However, current text-to-video generation models struggle with the trade-off among movement range, action coherence and object consistency. To mitigate this issue, we present a controllable text-to-video (T2V) diffusion model, called Control-A-Video, capable of maintaining consistency while customizable video synthesis. Based on a pre-trained conditional text-to-image (T2I) diffusion model, our model aims to generate videos conditioned on a sequence of control signals, such as edge or depth maps. For the purpose of improving object consistency, Control-A-Video integrates motion priors and content priors into video generation. We propose two motion-adaptive noise initialization strategies, which are based on pixel residual and optical flow, to introduce motion priors from input videos, producing more coherent videos. Moreover, a first-frame conditioned controller is proposed to generate videos from content priors of the first frame, which facilitates the semantic alignment with text and allows longer video generation in an auto-regressive manner. With the proposed architecture and strategies, our model achieves resource-efficient convergence and generate consistent and coherent videos with fine-grained control. Extensive experiments demonstrate its success in various video generative tasks such as video editing and video style transfer, outperforming previous methods in terms of consistency and quality.},
+    author = {Weifeng Chen1, Yatai Ji1, Jie Wu, Hefeng Wu2, Pan Xie,Jiashi Li,Xin Xia,Xuefeng Xiao,Liang Lin},
+    doi = {},
+    journal = {arXiv preprint arXiv:2305.13840},
+    keywords = {},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {Control - A - Video: Controllable Text - to - Video Generation with Diffusion Models},
+    url = {https://www.arxiv-vanity.com/papers/2305.13840/},
+    year = {2023}
+}
+
+@article{ControlVideo,
+    abstract ={Text-driven diffusion models have unlocked unprecedented abilities in image generation, whereas their video counterpart still lags behind due to the excessive training cost of temporal modeling. Besides the training burden, the generated videos also suffer from appearance inconsistency and structural flickers, especially in long video synthesis. To address these challenges, we design a \emph{training-free} framework called \textbf{ControlVideo} to enable natural and efficient text-to-video generation. ControlVideo, adapted from ControlNet, leverages coarsely structural consistency from input motion sequences, and introduces three modules to improve video generation. Firstly, to ensure appearance coherence between frames, ControlVideo adds fully cross-frame interaction in self-attention modules. Secondly, to mitigate the flicker effect, it introduces an interleaved-frame smoother that employs frame interpolation on alternated frames. Finally, to produce long videos efficiently, it utilizes a hierarchical sampler that separately synthesizes each short clip with holistic coherency. Empowered with these modules, ControlVideo outperforms the state-of-the-arts on extensive motion-prompt pairs quantitatively and qualitatively. Notably, thanks to the efficient designs, it generates both short and long videos within several minutes using one NVIDIA 2080Ti.},
+    author = {Yabo Zhang, Yuxiang Wei, Dongsheng Jiang, Xiaopeng Zhang, Wangmeng Zuo, Qitian},
+    doi = {},
+    journal = {arXiv preprint arXiv:2305.13077},
+    keywords = {text - to - video generation, controllable generation, training - free},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {ControlVideo: Training - free Controllable Text - to - Video Generation},
+    url = {https://arxiv.org/abs/2305.13077},
+    year = {2023}
+}
+
+@article{VideoFactory,
+    abstract = {With the explosive popularity of AI-generated content (AIGC), video generation has recently received
+a lot of attention. Generating videos guided by text instructions poses significant challenges, such
+as modeling the complex relationship between space and time, and the lack of large-scale text-video
+paired data. Existing text-video datasets suffer from limitations in both content quality and scale, or
+they are not open-source, rendering them inaccessible for study and use. For model design, previous
+approaches extend pretrained text-to-image generation models by adding temporal 1D convolution/attention modules for video generation. However, these approaches overlook the importance of jointly
+modeling space and time, inevitably leading to temporal distortions and misalignment between texts
+and videos. In this paper, we propose a novel approach that strengthens the interaction between spatial and temporal perceptions. In particular, we utilize a swapped cross-attention mechanism in 3D
+windows that alternates the “query” role between spatial and temporal blocks, enabling mutual reinforcement for each other. Moreover, to fully unlock model capabilities for high-quality video generation
+and promote the development of the field, we curate a large-scale and open-source video dataset called
+HD-VG-130M. This dataset comprises 130 million text-video pairs from the open-domain, ensuring high-definition, widescreen and watermark-free characters. A smaller-scale yet more meticulously
+cleaned subset further enhances the data quality, aiding models in achieving superior performance.
+Experimental quantitative and qualitative results demonstrate the superiority of our approach in
+terms of per-frame quality, temporal correlation, and text-video alignment, with clear margins},
+    author = {Wenjing Wang1
+, Huan Yang2*, Zixi Tuo2
+, Huiguo He2
+, Junchen Zhu2
+, Jianlong
+Fu2
+, Jiaying Liu1
+},
+    doi = {},
+    journal = {arXiv preprint arXiv:2305.10874},
+    keywords = {Text-to-video generation, diffusion model, dataset, large-scale generative model, video synthesis},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {Video Factory: Swap Attention in Spatiotemporal Diffusions for Text - to - Video Generation},
+    url = {https://arxiv.org/pdf/2305.10874},
+    year = {2023}
+}
+
+@article{IdentityPreserving,
+    abstract = {Identity-preserving text-to-video (IPT2V) generation aims to create high-fidelity videos with consistent human identity. It is an important task in video generation but remains an open problem for generative models. This paper pushes the technical frontier of IPT2V in two directions that have not been resolved in literature: (1) A tuning-free pipeline without tedious case-by-case finetuning, and (2) A frequency-aware heuristic identity-preserving DiT-based control scheme. We propose ConsisID, a tuning-free DiT-based controllable IPT2V model to keep human identity consistent in the generated video. Inspired by prior findings in frequency analysis of diffusion transformers, it employs identity-control signals in the frequency domain, where facial features can be decomposed into low-frequency global features and high-frequency intrinsic features. First, from a low-frequency perspective, we introduce a global facial extractor, which encodes reference images and facial key points into a latent space, generating features enriched with low-frequency information. These features are then integrated into shallow layers of the network to alleviate training challenges associated with DiT. Second, from a high-frequency perspective, we design a local facial extractor to capture high-frequency details and inject them into transformer blocks, enhancing the model's ability to preserve fine-grained features. We propose a hierarchical training strategy to leverage frequency information for identity preservation, transforming a vanilla pre-trained video generation model into an IPT2V model. Extensive experiments demonstrate that our frequency-aware heuristic scheme provides an optimal control solution for DiT-based models. Thanks to this scheme, our ConsisID generates high-quality, identity-preserving videos, making strides towards more effective IPT2V.}
+    author = {Shenghai Yuan, Jinfa Huang, Xianyi He, Yunyang Ge, Yujun Shi, Liuhan Chen, Jiebo Luo, Li Yuan},
+    doi = {10.48550/arXiv.2411.17440},
+    journal = {arXiv preprint arXiv:2411.17440},
+    keywords = {text - to - video generation, frequency decomposition, identity preservation},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {Identity - Preserving Text - to - Video Generation by Frequency Decomposition},
+    url = {https://arxiv.org/abs/2411.17440},
+    year = {2024}
+}
+
+@article{VideoCrafter2,
+    abstract = {Text-to-video generation aims to produce a video based on a given prompt. Recently, several commercial video models have been able to generate plausible videos with minimal noise, excellent details, and high aesthetic scores. However, these models rely on large-scale, well-filtered, high-quality videos that are not accessible to the community. Many existing research works, which train models using the low-quality WebVid-10M dataset, struggle to generate high-quality videos because the models are optimized to fit WebVid-10M. In this work, we explore the training scheme of video models extended from Stable Diffusion and investigate the feasibility of leveraging low-quality videos and synthesized high-quality images to obtain a high-quality video model. We first analyze the connection between the spatial and temporal modules of video models and the distribution shift to low-quality videos. We observe that full training of all modules results in a stronger coupling between spatial and temporal modules than only training temporal modules. Based on this stronger coupling, we shift the distribution to higher quality without motion degradation by finetuning spatial modules with high-quality images, resulting in a generic high-quality video model. Evaluations are conducted to demonstrate the superiority of the proposed method, particularly in picture quality, motion, and concept composition.},
+    author = {Haoxin Chen Yong Zhang Xiaodong Cun Menghan Xia Xintao Wang Chao Weng Ying Shan},
+    doi = {10.48550/arXiv.2401.09047},
+    journal = {arXiv preprint arXiv:2401.09047},
+    keywords = {},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {VideoCrafter 2: Overcoming Data Limitations for High - Quality Video Diffusion Models},
+    url = {https://arxiv.org/abs/2401.09047},
+    year = {2024}
+}
+
+@article{Latte,
+    abstract = {We propose Latte, a novel Latent Diffusion Transformer for video generation. Latte first extracts spatio-temporal tokens from input videos and then adopts a series of Transformer blocks to model video distribution in the latent space. In order to model a substantial number of tokens extracted from videos, four efficient variants are introduced from the perspective of decomposing the spatial and temporal dimensions of input videos. To improve the quality of generated videos, we determine the best practices of Latte through rigorous experimental analysis, including video clip patch embedding, model variants, timestep-class information injection, temporal positional embedding, and learning strategies. Our comprehensive evaluation demonstrates that Latte achieves state-of-the-art performance across four standard video generation datasets, i.e., FaceForensics, SkyTimelapse, UCF101, and Taichi-HD. In addition, we extend Latte to the text-to-video generation (T2V) task, where Latte achieves results that are competitive with recent T2V models. We strongly believe that Latte provides valuable insights for future research on incorporating Transformers into diffusion models for video generation.}
+    author = {Xin Ma, Yaohui Wang, Gengyun Jia, Xinyuan Chen, Ziwei Liu, Yuan - Fang Li, Cunjian Chen, Yu Qiao},
+    doi = {10.48550/arXiv.2401.03048},
+    journal = {arXiv preprint arXiv:2401.03048},
+    keywords = {video generation, latent diffusion model, transformer architecture},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {Latte: Latent Diffusion Transformer for Video Generation},
+    url = {https://arxiv.org/abs/2401.03048},
+    year = {2024}
+}
+
+@article{ScalingUp,
+    abstract = {Diffusion-based text-to-video generation has witnessed impressive progress in the past year yet still falls behind text-to-image generation. One of the key reasons is the limited scale of publicly available data (e.g., 10M video-text pairs in WebVid10M vs. 5B image-text pairs in LAION), considering the high cost of video captioning. Instead, it could be far easier to collect unlabeled clips from video platforms like YouTube. Motivated by this, we come up with a novel text-to-video generation framework, termed TF-T2V, which can directly learn with text-free videos. The rationale behind is to separate the process of text decoding from that of temporal modeling. To this end, we employ a content branch and a motion branch, which are jointly optimized with weights shared. Following such a pipeline, we study the effect of doubling the scale of training set (i.e., video-only WebVid10M) with some randomly collected text-free videos and are encouraged to observe the performance improvement (FID from 9.67 to 8.19 and FVD from 484 to 441), demonstrating the scalability of our approach. We also find that our model could enjoy sustainable performance gain (FID from 8.19 to 7.64 and FVD from 441 to 366) after reintroducing some text labels for training. Finally, we validate the effectiveness and generalizability of our ideology on both native text-to-video generation and compositional video synthesis paradigms. Code and models will be publicly available at this https URL.},
+    author = {Xiang Wang, Shiwei Zhang, Hangjie Yuan, Zhiwu Qing, Biao Gong, Yingya Zhang, Yujun Shen, Changxin Gao, Nong Sang},
+    doi = {10.48550/arXiv.2312.15770},
+    journal = {arXiv preprint arXiv:2312.15770},
+    keywords = {text - to - video generation, text - free videos, temporal consistency},
+    number = {},
+    publisher = {},
+    volume = {},
+    series = {},
+    title = {A Recipe for Scaling up Text - to - Video Generation with Text - free Videos},
+    url = {https://arxiv.org/abs/2312.15770},
+    year = {2023}
 }
